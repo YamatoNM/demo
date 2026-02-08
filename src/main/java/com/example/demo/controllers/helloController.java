@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class helloController {
     private final helloService hs = new helloService();
 
-    @GetMapping("/message")
+    @GetMapping("/")
     public String sayHello(){
        return hs.getMessage();
     }
